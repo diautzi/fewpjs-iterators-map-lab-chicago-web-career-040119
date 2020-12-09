@@ -12,7 +12,7 @@ const tutorials = [
 ];
 
 
-const titleCased = () => {
+const titleCased = (tutorials) => {
   return tutorials.map(tutorial => {
     tutorial = tutorial.split(' ');
     let newW = tutorial.map(t => t[0].toUpperCase() + t.slice(1));
